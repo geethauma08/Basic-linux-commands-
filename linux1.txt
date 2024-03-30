@@ -1,0 +1,398 @@
+$ whoami : show your username
+
+$ id:print your id
+Ex:  uid=1000(user) gid=1000(user) groups=1000(user),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),120(lpadmin),132(lxd),133(sambashare)
+
+$ groups :show which groups user belongs to
+Ex:  user adm cdrom sudo dip plugdev lpadmin lxd sambashare
+
+$ passwd : To change the password
+
+
+$ who : find out who is logged into the system
+Ex:
+user     seat0        2024-03-30 10:32 (login screen)
+user     tty2         2024-03-30 10:32 (tty2)
+
+
+$ last :show history of logins into the system
+Ex:
+user     tty2         tty2             Sat Mar 30 10:32   still logged in
+user     seat0        login screen     Sat Mar 30 10:32   still logged in
+reboot   system boot  6.8.0-11-generic Sat Mar 30 10:31   still running
+user     tty2         tty2             Sat Mar 30 09:33 - down   (00:30)
+user     seat0        login screen     Sat Mar 30 09:33 - down   (00:30)
+reboot   system boot  6.8.0-11-generic Sat Mar 30 09:33 - 10:04  (00:30)
+user     tty2         tty2             Sat Mar 30 07:27 - down   (00:21)
+user     seat0        login screen     Sat Mar 30 07:27 - down   (00:21)
+reboot   system boot  6.8.0-11-generic Sat Mar 30 07:27 - 07:49  (00:21)
+user     tty2         tty2             Fri Mar 29 23:16 - down   (00:00)
+user     seat0        login screen     Fri Mar 29 23:16 - down   (00:00)
+reboot   system boot  6.8.0-11-generic Fri Mar 29 23:16 - 23:17  (00:00)
+user     tty2         tty2             Fri Mar 29 20:30 - down   (00:48)
+user     seat0        login screen     Fri Mar 29 20:30 - down   (00:48)
+reboot   system boot  6.8.0-11-generic Fri Mar 29 20:30 - 21:19  (00:48)
+user     tty2         tty2             Fri Mar 29 19:01 - down   (00:14)
+user     seat0        login screen     Fri Mar 29 19:01 - down   (00:14)
+reboot   system boot  6.8.0-11-generic Fri Mar 29 19:01 - 19:15  (00:14)
+user     tty2         tty2             Fri Mar 29 17:24 - down   (00:59)
+user     seat0        login screen     Fri Mar 29 17:24 - down   (00:59)
+reboot   system boot  6.8.0-11-generic Fri Mar 29 17:24 - 18:23  (00:59)
+user     tty2         tty2             Fri Mar 29 13:22 - down   (03:38)
+user     seat0        login screen     Fri Mar 29 13:22 - down   (03:38)
+reboot   system boot  6.8.0-11-generic Fri Mar 29 13:22 - 17:01  (03:39)
+user     tty2         tty2             Fri Mar 29 09:31 - down   (02:51)
+user     seat0        login screen     Fri Mar 29 09:31 - down   (02:51)
+user     tty2         tty2             Fri Mar 29 09:30 - 09:30  (00:00)
+user     seat0        login screen     Fri Mar 29 09:30 - 09:31  (00:00)
+reboot   system boot  6.8.0-11-generic Fri Mar 29 09:29 - 12:22  (02:53)
+user     tty2         tty2             Fri Mar 29 09:01 - down   (00:08)
+user     seat0        login screen     Fri Mar 29 09:01 - down   (00:08)
+reboot   system boot  6.8.0-11-generic Fri Mar 29 09:00 - 09:10  (00:09)
+user     tty2         tty2             Thu Mar 28 22:29 - down   (00:45)
+user     seat0        login screen     Thu Mar 28 22:29 - down   (00:45)
+reboot   system boot  6.8.0-11-generic Thu Mar 28 22:28 - 23:15  (00:46)
+user     tty2         tty2             Thu Mar 28 18:11 - down   (00:09)
+user     seat0        login screen     Thu Mar 28 18:11 - down   (00:09)
+reboot   system boot  6.8.0-11-generic Thu Mar 28 18:11 - 18:20  (00:09)
+user     tty2         tty2             Thu Mar 28 17:10 - down   (00:39)
+user     seat0        login screen     Thu Mar 28 17:10 - down   (00:39)
+reboot   system boot  6.8.0-11-generic Thu Mar 28 17:10 - 17:50  (00:40)
+user     tty2         tty2             Thu Mar 28 14:33 - down   (02:04)
+user     seat0        login screen     Thu Mar 28 14:33 - down   (02:04)
+reboot   system boot  6.8.0-11-generic Thu Mar 28 14:33 - 16:38  (02:04)
+reboot   system boot  6.8.0-11-generic Thu Mar 28 14:13 - 14:14  (00:00)
+user     tty2         tty2             Thu Mar 28 10:10 - down   (00:59)
+user     seat0        login screen     Thu Mar 28 10:10 - down   (00:59)
+reboot   system boot  6.8.0-11-generic Thu Mar 28 10:09 - 11:09  (00:59)
+user     tty2         tty2             Wed Mar 27 19:04 - down   (00:00)
+user     seat0        login screen     Wed Mar 27 19:04 - down   (00:00)
+reboot   system boot  6.8.0-11-generic Wed Mar 27 19:04 - 19:05  (00:01)
+user     tty2         tty2             Wed Mar 27 17:35 - down   (00:16)
+user     seat0        login screen     Wed Mar 27 17:35 - down   (00:16)
+reboot   system boot  6.8.0-11-generic Wed Mar 27 17:35 - 17:52  (00:17)
+user     tty2         tty2             Wed Mar 27 14:48 - down   (01:44)
+user     seat0        login screen     Wed Mar 27 14:48 - down   (01:44)
+reboot   system boot  6.8.0-11-generic Wed Mar 27 14:48 - 16:33  (01:44)
+user     tty2         tty2             Wed Mar 27 14:01 - down   (00:07)
+user     seat0        login screen     Wed Mar 27 14:01 - down   (00:07)
+reboot   system boot  6.8.0-11-generic Wed Mar 27 13:59 - 14:08  (00:08)
+user     tty2         tty2             Tue Mar 26 23:14 - down   (00:28)
+user     seat0        login screen     Tue Mar 26 23:14 - down   (00:28)
+reboot   system boot  6.8.0-11-generic Tue Mar 26 23:14 - 23:43  (00:29)
+user     tty2         tty2             Tue Mar 26 18:13 - down   (00:01)
+user     seat0        login screen     Tue Mar 26 18:13 - down   (00:01)
+reboot   system boot  6.8.0-11-generic Tue Mar 26 18:13 - 18:14  (00:01)
+user     tty2         tty2             Tue Mar 26 14:56 - down   (01:48)
+user     seat0        login screen     Tue Mar 26 14:56 - down   (01:48)
+reboot   system boot  6.8.0-11-generic Tue Mar 26 14:55 - 16:44  (01:48)
+user     tty2         tty2             Tue Mar 26 14:15 - down   (00:03)
+user     seat0        login screen     Tue Mar 26 14:15 - down   (00:03)
+reboot   system boot  6.8.0-11-generic Tue Mar 26 14:15 - 14:18  (00:03)
+geetha   tty2         tty2             Tue Mar 26 13:53 - down   (00:00)
+geetha   seat0        login screen     Tue Mar 26 13:53 - down   (00:00)
+reboot   system boot  6.8.0-11-generic Tue Mar 26 13:52 - 13:53  (00:00)
+user     tty2         tty2             Tue Mar 26 12:37 - down   (00:31)
+user     seat0        login screen     Tue Mar 26 12:37 - down   (00:31)
+reboot   system boot  6.8.0-11-generic Tue Mar 26 12:37 - 13:09  (00:32)
+user     tty2         tty2             Mon Mar 25 10:53 - down   (00:32)
+user     seat0        login screen     Mon Mar 25 10:53 - down   (00:32)
+reboot   system boot  6.8.0-11-generic Mon Mar 25 10:52 - 11:26  (00:33)
+user     tty2         tty2             Sun Mar 24 11:27 - down   (00:09)
+user     seat0        login screen     Sun Mar 24 11:27 - down   (00:09)
+reboot   system boot  6.8.0-11-generic Sun Mar 24 11:26 - 11:36  (00:09)
+user     tty2         tty2             Sat Mar 23 20:50 - down   (00:36)
+user     seat0        login screen     Sat Mar 23 20:50 - down   (00:36)
+reboot   system boot  6.8.0-11-generic Sat Mar 23 20:50 - 21:27  (00:37)
+user     tty2         tty2             Sat Mar 23 18:09 - down   (01:08)
+user     seat0        login screen     Sat Mar 23 18:09 - down   (01:08)
+reboot   system boot  6.8.0-11-generic Sat Mar 23 18:08 - 19:17  (01:09)
+user     tty2         tty2             Sat Mar 23 09:55 - down   (02:36)
+user     seat0        login screen     Sat Mar 23 09:55 - down   (02:36)
+reboot   system boot  6.8.0-11-generic Sat Mar 23 09:55 - 12:32  (02:37)
+user     tty2         tty2             Sat Mar 23 08:21 - down   (00:26)
+user     seat0        login screen     Sat Mar 23 08:21 - down   (00:26)
+reboot   system boot  6.8.0-11-generic Sat Mar 23 08:21 - 08:48  (00:26)
+user     tty2         tty2             Sat Mar 23 08:09 - down   (00:09)
+user     seat0        login screen     Sat Mar 23 08:09 - down   (00:09)
+reboot   system boot  6.8.0-11-generic Sat Mar 23 08:09 - 08:19  (00:10)
+user     tty2         tty2             Fri Mar 22 21:18 - 21:19  (00:00)
+user     seat0        login screen     Fri Mar 22 21:18 - down   (00:00)
+reboot   system boot  6.8.0-11-generic Fri Mar 22 21:18 - 21:19  (00:00)
+user     tty2         tty2             Thu Mar 21 14:32 - down   (01:16)
+user     seat0        login screen     Thu Mar 21 14:32 - down   (01:16)
+reboot   system boot  6.8.0-11-generic Thu Mar 21 14:32 - 15:48  (01:16)
+user     tty2         tty2             Thu Mar 21 14:20 - down   (00:09)
+user     seat0        login screen     Thu Mar 21 14:20 - down   (00:09)
+reboot   system boot  6.8.0-11-generic Thu Mar 21 14:20 - 14:30  (00:09)
+user     tty2         tty2             Thu Mar 21 14:05 - down   (00:00)
+user     seat0        login screen     Thu Mar 21 14:05 - down   (00:00)
+reboot   system boot  6.8.0-11-generic Thu Mar 21 14:05 - 14:06  (00:00)
+user     tty2         tty2             Thu Mar 21 13:55 - down   (00:00)
+user     seat0        login screen     Thu Mar 21 13:55 - down   (00:00)
+reboot   system boot  6.8.0-11-generic Thu Mar 21 13:55 - 13:55  (00:00)
+user     tty2         tty2             Thu Mar 21 10:04 - 11:47  (01:42)
+user     seat0        login screen     Thu Mar 21 10:04 - down   (01:42)
+reboot   system boot  6.8.0-11-generic Thu Mar 21 10:04 - 11:47  (01:43)
+user     tty2         tty2             Thu Mar 21 08:44 - down   (00:00)
+user     seat0        login screen     Thu Mar 21 08:44 - down   (00:00)
+reboot   system boot  6.8.0-11-generic Thu Mar 21 08:44 - 08:45  (00:00)
+user     tty2         tty2             Tue Mar 19 15:40 - down   (01:44)
+user     seat0        login screen     Tue Mar 19 15:40 - down   (01:44)
+reboot   system boot  6.8.0-11-generic Tue Mar 19 15:40 - 17:25  (01:45)
+user     tty2         tty2             Tue Mar 19 14:56 - down   (00:04)
+user     seat0        login screen     Tue Mar 19 14:56 - down   (00:04)
+reboot   system boot  6.8.0-11-generic Tue Mar 19 14:55 - 15:00  (00:05)
+user     tty2         tty2             Tue Mar 19 14:19 - down   (00:26)
+user     seat0        login screen     Tue Mar 19 14:19 - down   (00:26)
+reboot   system boot  6.8.0-11-generic Tue Mar 19 14:18 - 14:45  (00:26)
+user     tty2         tty2             Tue Mar 19 12:13 - down   (00:00)
+user     seat0        login screen     Tue Mar 19 12:13 - down   (00:00)
+reboot   system boot  6.8.0-11-generic Tue Mar 19 12:13 - 12:14  (00:00)
+user     tty2         tty2             Mon Mar 18 21:19 - down   (00:40)
+user     seat0        login screen     Mon Mar 18 21:19 - down   (00:40)
+reboot   system boot  6.8.0-11-generic Mon Mar 18 21:19 - 22:00  (00:40)
+user     tty2         tty2             Sun Mar 17 21:42 - down   (02:14)
+user     seat0        login screen     Sun Mar 17 21:42 - down   (02:14)
+reboot   system boot  6.8.0-11-generic Sun Mar 17 21:41 - 23:56  (02:14)
+user     tty2         tty2             Sun Mar 17 17:01 - down   (00:24)
+user     seat0        login screen     Sun Mar 17 17:01 - down   (00:24)
+reboot   system boot  6.8.0-11-generic Sun Mar 17 17:01 - 17:26  (00:24)
+user     tty2         tty2             Sun Mar 17 16:08 - down   (00:42)
+user     seat0        login screen     Sun Mar 17 16:08 - down   (00:42)
+reboot   system boot  6.8.0-11-generic Sun Mar 17 16:08 - 16:50  (00:42)
+user     tty2         tty2             Sun Mar 17 13:59 - down   (01:17)
+user     seat0        login screen     Sun Mar 17 13:59 - down   (01:17)
+reboot   system boot  6.8.0-11-generic Sun Mar 17 13:58 - 15:16  (01:18)
+user     tty2         tty2             Sat Mar 16 23:13 - down   (00:29)
+user     seat0        login screen     Sat Mar 16 23:13 - down   (00:29)
+reboot   system boot  6.8.0-11-generic Sat Mar 16 23:13 - 23:43  (00:30)
+user     tty2         tty2             Sat Mar 16 21:10 - down   (01:51)
+user     seat0        login screen     Sat Mar 16 21:10 - down   (01:51)
+reboot   system boot  6.8.0-11-generic Sat Mar 16 21:09 - 23:01  (01:51)
+user     tty2         tty2             Sat Mar 16 07:45 - down   (00:09)
+user     seat0        login screen     Sat Mar 16 07:45 - down   (00:09)
+reboot   system boot  6.8.0-11-generic Sat Mar 16 07:45 - 07:54  (00:09)
+user     tty2         tty2             Sat Mar 16 06:29 - down   (01:11)
+user     seat0        login screen     Sat Mar 16 06:29 - down   (01:11)
+reboot   system boot  6.8.0-11-generic Sat Mar 16 06:29 - 07:40  (01:11)
+user     tty2         tty2             Sat Mar 16 04:34 - down   (01:47)
+user     seat0        login screen     Sat Mar 16 04:34 - down   (01:47)
+
+wtmp begins Sat Mar 16 04:34:15 2024
+
+
+"File Operations"
+
+$ ls: list the files and directories
+
+$ cp: copy files
+
+$ rm: remove files and directories
+
+$ mv: rename or move files and directories to another location 
+
+$ chmod: change file or directory permissions
+
+$chown: change file/directory ownership
+
+"Navigating fileSystem and managing directories"
+
+$cd: change directory
+
+$pwd: confirm current directory
+
+$ln: make links and symlinks to files and directories
+
+$mkdir: make new directory
+
+$rmdir: remove directories in Unix
+
+"Main features of unix :"
+
+multiuser - More than one user can use the machine
+
+Multitasking- More than one program can be run at a time.
+
+Portability – This means the operating system can be easily converted to run on different
+browsers.
+
+
+"Control Commands:"
+
+These commands are a two-key combination where a letter is pressed simultaneously with
+the ‘Ctrl’ key.
+
+•Control-C: This command terminates the currently running foreground
+
+•Control-D: This command terminates the currently running login or terminal
+•
+Control-Z: This command suspends the currently running foreground process to
+the background.
+
+$ ps -ef : Show every process running, formatted as a table
+
+$ top : Show a live view of all current processes
+
+bg - resume a background suspended a job
+
+$ xterm
+
+Ctrl-Z: suspends the job
+$ bg: Continue running a job that was previously suspended (using Ctrl-Z) 
+
+$ clear: Clear all prior text from the terminal screen
+$ history: print history of commands in the current session
+
+
+
+$ touch: Create a new file 
+$ touch file1 file2
+creates two files file1 and file2
+
+
+$ cat > file1
+•Hello
+•^D
+create file with the content 'Hello' inside it 
+
+#3) cp: Copy files
+•Syntax: cp [OPTION]source destination
+•Example: Copies the contents from file1 to file2 and the contents of file1 are retained
+•$ cp file1 file2
+
+
+
+#4) mv: Move files or rename files
+•Syntax: mv [OPTION]source destination
+•Example: Create empty files called ‘file1’ and ‘file2’
+•$ mv file1 file2
+
+
+
+#5) rm: Remove files and directories
+•Syntax: rm [OPTION]…[FILE]
+•Example: Delete file1
+4|Page•
+$ rm file1
+
+
+
+#6) mkdir: Make a directory
+•Syntax: mkdir [OPTION] directory
+•Example: Create a directory called dir1
+•$ mkdir dir1
+
+
+
+
+#7) rmdir: Remove a directory
+•Syntax: rmdir [OPTION] directory
+•Example: Create empty files called ‘file1’ and ‘file2’
+•$ rmdir dir1
+
+
+
+
+#8) cd: Change directory
+•Syntax: cd [OPTION] directory
+•Example: Change working directory to dir1
+•$ cd dir1
+
+
+
+
+#9) pwd: Print the present working directory
+•Syntax: pwd [OPTION]
+•Example: Print ‘dir1’ if a current working directory is dir1
+
+
+
+
+#10) ls: List directory contents
+•Syntax: ls [OPTION] [FILE]
+•Example: list all (including hidden files) directory contents, in long format, sorted by
+•$ ls -alt
+
+
+
+#11) which: Locate a command
+•Syntax: which [-a] filename
+•Example: List all paths from where ‘cat’ can run
+•$ which -a cat
+
+
+
+#12) man: Interface for working with the online reference manuals.
+•Syntax: man [-s section] item
+•Example: Show the manual page for the ‘cat’ command
+•$ man cat
+
+
+#13) su: Change user-id or become super-user.
+•Syntax: su [options] [username]
+•Example: Change user-id to ‘user1’ (if it exists)
+$ su user1
+
+
+#14) sudo: Execute a command as some other user or super-user
+•Syntax: sudo [options] [command]
+•Example: Get a file listing of an unlisted directory
+•$ sudo ls /usr/local/protected
+
+
+
+#15) find: Used to search for files and directories as mentioned in the ‘expression’
+•Syntax: find [starting-point] [expression]
+•Example: In ‘/usr’ folder, find character device files, of the name ‘backup’
+•$ find /usr -type c -name backup
+
+
+
+#16) du: Estimate disk usage is blocks
+•Syntax: du [options] [file]
+•Example: Show the number of blocks occupied by files in the current directory
+•$ du
+
+
+#17) df: Show the number of free blocks for the mounted file system
+•Syntax: df [options] [file]
+•Example: Show the number of free blocks in local file systems
+•$ df -l
+
+
+#18) cal: Displays the calendar.
+•Syntax: cal [[month] year]
+•Example: display the calendar for April 2018
+•$ cal 4 2018
+
+
+
+#19) date: Displays the system date and time.
+•Syntax: date [+format]
+•Example: Display the date in dd/mm/yy format
+•$ date +%d/%m/%y
+
+
+
+#20) banner: Prints a large banner on the standard output.
+•Syntax: banner message
+•Example: Print “Unix” as the banner
+•$ banner Unix
+
+
+#21) who: Displays the list of users currently logged in
+Syntax: who [option] … [file][arg1]
+•Example: List all currently logged-in users
+•$ who
+
+
+#22) whoami: Displays the user id of the currently logged-in user.
+•Syntax: whoami [option]
+•Example: List currently logged-in user
+•$ whoami
+
+
+
+
+
